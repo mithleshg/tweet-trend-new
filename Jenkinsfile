@@ -1,3 +1,4 @@
+ def registry = 'https://valaxy1990.jfrog.io'
 pipeline {
     agent {
         node {
@@ -45,8 +46,8 @@ stage("Quality Gate"){
     }
 }  
 
-         def registry = 'https://valaxy1990.jfrog.io'
-             stage("Jar Publish") {
+
+      stage("Jar Publish") {
             steps {
                 script {
                         echo '<--------------- Jar Publish Started --------------->'
