@@ -45,7 +45,7 @@ stage("Quality Gate"){
     }
 }  
 
-         def registry = 'https://valaxy1990.jfrog.io
+         def registry = 'https://valaxy1990.jfrog.io'
              stage("Jar Publish") {
             steps {
                 script {
